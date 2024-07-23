@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Bio data Form</title>
+</head>
+<body>
+    <h1>User Bio data Form</h1>
+    <form action="/submit_form" method="post">
+        <label for="first_name">First name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br> 
+
+        <label for="last_name">Last name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="date_of_birth">Date of birth (DD/MM/YYYY):</label><br>
+        <input type="text" id="date_of_birth" name="date_of_birth" pattern="\d{2}/\d{2}/\d{4}" required><br><br>
+
+        <label for="state_of_origin">State of origin:</label><br>
+        <input type="text" id="state_of_origin" name="state_of_origin" required><br><br>
+
+        <label for="marital_status">Are you married? (True/False or Yes/No):</label><br>
+        <input type="text" id="marital_status" name="marital_status" required><br><br>
+
+        <label for="school_attended">School attended:</label><br>
+        <input type="text" id="school_attended" name="school_attended" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="year_of_graduation">Year of graduation:</label><br>
+        <input type="text" id="year_of_graduation" name="year_of_graduation" pattern="\d{4}" required><br><br>
+
+        <label for="house_address">House address:</label><br>
+        <input type="text" id="house_address" name="house_address" required><br><br>
+
+        <label for="employment_status">Are you employed? (True/False or Yes/No):</label><br>
+        <input type="text" id="employment_status" name="employment_status" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
